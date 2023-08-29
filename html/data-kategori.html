@@ -246,6 +246,12 @@
                 <div data-i18n="Basic">Data Lokasi </div>
               </a>
                 </li>
+                <li class="menu-item">
+              <a href="cetak-kode.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Cetak Kode QR</div>
+              </a>
+                </li>
               </ul>
             </li>
             
@@ -367,15 +373,20 @@
                     <thead>
                       <tr>
                       
-                        <th>Nama Kategori</th>
+                        <th> Kategori</th>
+                        <th>Sub Kategori</th>
+
                         <th>Keterangan</th>
+                        <th>Jumlah Aset</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i><a href="show-kategori.html"> <strong>Premium</strong></a> </td>
-                        <td>Off Stock </td>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i><a href="show-kategori.html"> <strong>Ini kategori utama</strong></a> </td>
+                        <td>Ini sub kategori utama</td>
+                        <td>ini keterangan kategori pertama</td>
+                        <td>1</td>
                        
                         <td>
                           <div class="dropdown">
@@ -383,19 +394,18 @@
                               <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="edit-data-kategori.html"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
+                              <a class="dropdown-item" href="edit-data-kategori.html">
+                               <i class="bx bx-edit-alt me-1"></i> Edit</a>
+                               <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>                            
+                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Super</strong></td>
-                        <td>On Stock</td>
+                        <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Ini Kategori Kedua</strong></td>
+                        <td>ini sub kategorinya</td>
+                        <td>ini keterangannya </td>
+                        <td>1</td>
                         
                         <td>
                           <div class="dropdown">
@@ -404,20 +414,20 @@
                             </button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              
+                               <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Super</strong>
+                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>ini kategori ketiga</strong>
                         </td>
-                        <td>On Stock </td>
+                        <td>Ini sub kategorinya </td>
+                        <td>Ini keterangan kategorinya </td>
+                        <td>1</td>
                         
                         <td>
                           <div class="dropdown">
@@ -426,11 +436,9 @@
                             </button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              
+                               <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>
                             </div>
                           </div>
                         </td>
@@ -439,6 +447,28 @@
                   </table>
                   </div>               
                  </div>
+                 <!-- delete dropdown-->
+                 <div class="mt-3 dropdown-item">
+                        <div class="modal fade" id="modalToggle" aria-labelledby="modalToggleLabel" tabindex="-1" style="display: none" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modalToggleLabel">Yakin Menghapus ?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">Tindakan ini akan menghapus data tersebut.</div>
+                              <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#modalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                  Hapus
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal 2-->
+                   
+                      </div>
+
                  
                  
                     
@@ -449,11 +479,14 @@
               <div class="row">
                 
               </div>
-              <div class="card-body pdl0">
+              <div class="card-body pdl0 pdt0rem3">
+                          <div class="card-body pdl0 pdt1r">
                           <div class="mb-2">
                             <a href="tambah-kategori.html"> 
                           <button type="submit" class="btn btn-primary">Tambah Kategori</button> </a>
                       </div>
+                      
+            </div>
                       
             </div>
           </div>

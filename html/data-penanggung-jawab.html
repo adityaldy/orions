@@ -192,13 +192,14 @@
                 </li>
               </ul>
             </li>
-            <!--list aset -->
+            <!--list kategori -->
 
             <li class="menu-item">
               <a href="data-aset.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Data Aset</div>
               </a>
+
            
             <!-- list kategori -->
             
@@ -243,6 +244,13 @@
               <a href="data-lokasi.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Data Lokasi </div>
+              </a>
+                </li>
+
+                <li class="menu-item">
+              <a href="cetak-kode.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Cetak Kode QR</div>
               </a>
                 </li>
               </ul>
@@ -347,44 +355,44 @@
 
           <!-- / Navbar -->
 
+          <!-- Content wrapper -->
+          
+            <!-- Content -->
+
+                      
+            <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Halaman /</span> Data Penanggung Jawab </h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Halaman/</span> Data Penanggung Jawab</h4>
 
               <!-- Basic Bootstrap Table -->
+              <!-- Hoverable Table rows -->
               <div class="card">
-                
-              <!--/ Basic Bootstrap Table -->
-
-              
-              <!--/ Bootstrap Dark Table -->
-
-               <div class="card">
-                <h5 class="card-header">Tabel Penanggung Jawab</h5>
+                <h5 class="card-header">Tabel Data Penanggung Jawab</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th>Nama Penanggung Jawab</th>
-                        <th>Jabatan</th>
-                        <th>Alamat</th>
-                        <th>Telepon</th>
-                        <th>Email</th>
-                        <th>PIC</th>
-                        <th>Keterangan</th>
+                      
+                        <th>NAMA PENANGGUNG JAWAB</th>
+                        <th>JABATAN</th>
+                        <th>ALAMAT</th>
+                        <th>TELEPON</th>
+                        <th>EMAIL</th>
+                        <th>KETERANGAN</th>
+                        <th>Jumlah Aset</th>
                         <th>Aksi</th>
-                        
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <a href="show-penanggung-jawab.html"> <strong>H. Umuh Muchtar</strong> </a> </td>
-                        <td>Komisaris Utama</td>
-                        <td>JL. Sulanjana No. 17 </td>
-                        <td>08997812348</td>
-                        <td>persib0fficial1933@gmail.com</td>
-                        <td>..</td>
-                        <td>On Stock</td>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i><a href="show-penanggung-jawab.html"> <strong>Ini penanggung jawab pertama</strong></a> </td>
+                        <td>Ini Jabatan penanggung jawab pertama</td>
+                        <td>ini alamat penanggung jawab pertama</td>
+                        <td>ini nomor telepon penanggung jawab pertama</td>
+                        <td>ini email penanggung jawab pertama</td>
+                        <td>ini keterangan penanggung jawab pertama</td>
+                        <td>1</td>
                        
                         <td>
                           <div class="dropdown">
@@ -394,23 +402,23 @@
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="edit-data-penanggung-jawab.html"
                                 ><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                             
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a>
-                             
+                              
+                               <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>
                             </div>
                           </div>
                         </td>
                       </tr>
-                      <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PT. Persib Bandung Bermartabat</strong></td>
-                        <td>Komisaris Utama</td>
-                        <td>JL. Sulanjana No. 17 </td>
-                        <td>08997812348</td>
-                        <td>persib0fficial1933@gmail.com</td>
-                        <td>..</td>
+                      <tr>
+                       <td>
+                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Ini penanggung jawab</strong>
+                        </td>
+                         <td>Ini jabatan penanggung jawab</td>
+                        <td>Ini Alamat penanggung jawab</td>
+                        <td>Ini nomor telepon penanggung jawab</td>
+                        <td>Ini email penanggung jawab</td>
+                        <td>Ini keterangan penanggung jawab</td>
+                        <td>2</td>
                         
-                        <td>On Stock</td>
-                       
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -418,23 +426,25 @@
                             </button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a>
+
+                              <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>
+                             
                             </div>
                           </div>
                         </td>
                       </tr>
-                      <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PT. Persib Bandung Bermartabat</strong></td>
-                      <td>Komisaris Utama</td>
-                        <td>JL. Sulanjana No. 17 </td>
-                        <td>08997812348</td>
-                        <td>persib0fficial1933@gmail.com</td>
-                        <td>.. </td>
-                        <td>On Stock</td>
-                       
+                      <tr>
+                        <td>
+                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Ini penanggung jawab ketiga</strong>
+                        </td>
+                         <td>Ini jabatan penanggung jawab</td>
+                        <td>Ini alamat penanggung jawab</td>
+                        <td>Ini nomortelepon penanggung jawab</td>
+                        <td>Ini email penanggung jawab</td>
+                        <td>Ini keterangan penanggung jawab</td>
+                        <td>2</td>
+                        
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -442,84 +452,58 @@
                             </button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              
+                               <a class="dropdown-item" data-bs-toggle="modal" href="#modalToggle"><i class="bx bx-trash me-1"></i> Delete</a>
                             </div>
                           </div>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                  </div>
-                  <div class="mb-3">
-                    <a href="tambah-penanggung-jawab.html">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Tambah Penanggung Jawab</button> </a>
-                </div>
-              </div>
-                        </div>
-                        
-                        
+                  </div>               
+                 </div>
+    
 
-                        
-                          </div>
-                          
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                 
+                 
+                    
                 <!--/ Total Revenue -->
                 
-                            </div>
                             
-                                
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    
-                            
-                                
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <!-- </div>
-    <div class="row"> -->
-                    
-                              
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                           
               <div class="row">
-                <!-- Order Statistics -->
                 
-                <!--/ Order Statistics -->
-
-                <!-- Expense Overview -->
-                
-                <!--/ Expense Overview -->
-
-                <!-- Transactions -->
-                
-                <!--/ Transactions -->
               </div>
+              <div class="card-body pdl0">
+                          <div class="mb-2">
+                            <a href="tambah-penanggung-jawab.html"> 
+                          <button type="submit" class="btn btn-primary">Tambah Penanggung Jawab</button> </a>
+                      </div>
+                      
             </div>
+            <!-- dropdown delete modals -->
+            <div class="mt-3 dropdown-item">
+                        <div class="modal fade" id="modalToggle" aria-labelledby="modalToggleLabel" tabindex="-1" style="display: none" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modalToggleLabel">Yakin Menghapus ?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">Tindakan ini akan menghapus data tersebut.</div>
+                              <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#modalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                  Hapus
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal 2-->
+                       
+                      </div>
+          </div>
             <!-- / Content -->
 
             <!-- Footer -->
@@ -530,7 +514,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  
+      
                   
                 </div>
                 <div>

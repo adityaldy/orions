@@ -236,12 +236,19 @@
                 <div data-i18n="Basic">Data Penanggung Jawab </div>
               </a>
                 </li>
-                <!-- List Lokasi --><p><li class="menu-item">
+                <!-- List Lokasi -->
+                <li class="menu-item">
               <a href="data-lokasi.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Data Lokasi </div>
               </a>
-                </li></p>
+                </li>
+                <li class="menu-item">
+              <a href="cetak-kode.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Cetak Kode QR</div>
+              </a>
+                </li>
               </ul>
             </li>
          </aside>
@@ -335,200 +342,362 @@
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Halaman/</span> Show Data Aset</h4>
 
             <!-- show set isi -->
-            <div class="row">
-                <!-- Inline text elements -->
-                <div class="col">
-                  <div class="card mb-4">
-                    <h5 class="card-header">Informasi Umum</h5>
+           
+              <div class="row">
+                <div class="col-md mb-4 mb-md-0">
+                <div class="accordion mt-3" id="accordionExample">
+                    
+                  <div class="card mb-6">
                     <div class="card-body">
-                      <table class="table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Nama Aset</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Meja Kantor</p>
-                            </td>
-                          </tr>
-                          
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Kode Aset</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> INV/09-07-00</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Status</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Aktif</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Kategori</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Biasa</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Sub Kategori</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Perlengkapan Kantor</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-3">
-                              <p class="mb-0"><strong>Detail Aset</strong></p>
-                            </td>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Merek</small></td>
-                            <td class="py-3"><p class="mb-0"> Chitose</p>
-                          </tr>
-                          <td class="align-middle"><small class="text-light fw-semibold">Tipe</small></td>
-                            <td class="py-3"><p class="mb-0"> CH0988</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">nomor Seri</small></td>
-                            <td class="py-3"><p class="mb-0">453745</p>
-                          </tr>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Tahun Produksii</small></td>
-                            <td class="py-3"><p class="mb-0">2019</p>
-                          </tr>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Prdusen</small></td>
-                            <td class="py-3"><p class="mb-0">PT. Mencari Berkah</p>
-                            </tr>
-                            <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Deskripsi</small></td>
-                            <td class="py-3"><p class="mb-0">Meja yang terdapat di ruang karyawan</p>
-                          </tr>
-
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Nama Aset</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Meja Kantor</p>
-                            </td>
-                          </tr>
-                          
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Kode Aset</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> INV/09-07-00</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Status</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Aktif</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Kategori</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Biasa</p>
-                            </td>
-                          </tr>
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Sub Kategori</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Perlengkapan Kantor</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-3">
-                              <p class="mb-0"><strong>Pembelian</strong></p>
-                            </td>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Tanggal</small></td>
-                            <td class="py-3"><p class="mb-0"> 07/08/2000</p>
-                          </tr>
-                          <td class="align-middle"><small class="text-light fw-semibold">No. Invoice</small></td>
-                            <td class="py-3"><p class="mb-0">JUNO92000</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Distributor</small></td>
-                            <td class="py-3"><p class="mb-0">PT. Mencari Berkah</p>
-                          </tr>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Jumlah</small></td>
-                            <td class="py-3"><p class="mb-0">259</p>
-                          </tr>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Harga Total</small></td>
-                            <td class="py-3"><p class="mb-0">RP. 245.000.000</p>
-                            </tr>
-                            <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Foto</small></td>
-                            <td class="py-3"><p class="mb-0"><img src="../assets/img/mejach1.jpg" alt="gambar-meja2"/>
-                            </td>
-                            </p>
-                            </p>
-                          </tr>
-
-                           <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Lampiran</small></td>
-                            <td class="py-3"><p class="mb-0"><img src="../assets/img/lampiran.png" alt="lampiran"/>
-                            </td>
-                            </p>
-                            </p>
-                          </tr>
-
-                           <tr>
-                            <td class="py-3">
-                              <p class="mb-0"><strong>Keterangan Tambahan</strong></p>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Keterangan Tambahan</small></td>
-                            <td class="py-3"><p class="mb-0">..</p>
-                            </tr>
-
-                            <tr>
-                            <td class="py-3">
-                              <p class="mb-0"><strong>Penyusutan</strong></p>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Masalah Ekonomi</small></td>
-                            <td class="py-3"><p class="mb-0">Labil</p>
-                            </tr>
-
-                            <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Penyusutan</small></td>
-                            <td class="py-3"><p class="mb-0">Cukup Menyusut</p>
-                            </tr>
-
-
-
-
-                           
-
-                          
-                          
-                         
-                         
-                        </tbody>
-                      </table>
+                      <h6 class="mt-8">Data Aset</h6>
+                      <p class="card-text">
+                         <h5 class="mt-5 text-muted">Nama Aset</h5>
+                        Meja Kantor
+                         <h5 class="mt-5 text-muted">Kode Aset</h5>
+                          2/INV/2023
+                           <h5 class="mt-5 text-muted">Kode Sistem</h5>
+                            61S4J254NBF9D3VE
+                            <h5 class="mt-5 text-muted">Kategori</h5>
+                              Perlengkapan Kantor
+                      </p>
                     </div>
                   </div>
+                     
+                  <div class="card mb-4">
+                    <div class="card-body">
+                       <h6 class="mt-8">Detil Aset</h6>
+                      <p class="card-text">
+                       <h6 class="mt-5 text-muted">Merek</h6>
+                        Chitose
+                        <h6 class="mt-5 text-muted">Tipe</h6>
+                        Standart
+                        <h6 class="mt-5 text-muted">Produsen</h6>
+                        PT. Mencari Berkah
+                        <h6 class="mt-5 text-muted">No. Seri/Kode Produksi</h6>
+                        923-02-09
+                        <h6 class="mt-5 text-muted">Tahun Produksi</h6>
+                        2019
+                        <h5 class="mt-5 text-muted">Deskripsi</h6>
+                          Masih Dalam Pemakaian
+                      </p>
+                    </div>
+                  </div>
+           
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h6 class="mt-8">Pembelian</h6>
+                      <p class="card-text">
+                       <h6 class="mt-5 text-muted">Tanggal Pembellian</h6>
+                        4 Agustus 2023
+                        <h6 class="mt-5 text-muted">Distributor/Toko</h6>
+                        PT. Subur Berkah
+                        <h6 class="mt-5 text-muted">No. Invoice</h6>
+                        JUN987018
+                        <h6 class="mt-5 text-muted">Jumlah</h6>
+                        12 Unit
+                        <h6 class="mt-5 text-muted">Harga Satuan</h6>
+                       RP 3.000.000
+                        <h5 class="mt-5 text-muted">Harga Total</h6>
+                        RP 360.00000
+                      </p>
+
+                    </div>
+
+                  </div>
+                   <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                      <h6 class="mt-5 text-muted">Foto dan Kode QR</h6>
+                      <img src="../assets/img/mejach1.jpg" alt="gambar-meja2">
+                      <img src="../assets/img/barcode.jpeg" alt="kode-qr">
+                      </p>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary">Cetak Kode</a>
+                  </div>
+
+                  </div>
+                 </div>
+
+                  <div class="col-md">
+                  
+                  <div class="demo-inline-spacing mt-3">
+                        <div class="list-group list-group-horizontal-md text-md-center">
+                          <a class="list-group-item list-group-item-action active" id="home-list-item" data-bs-toggle="list" href="#horizontal-home">Riwayat</a>
+                          <a class="list-group-item list-group-item-action" id="profile-list-item" data-bs-toggle="list" href="#horizontal-profile">Agenda</a>
+                          <a class="list-group-item list-group-item-action" id="messages-list-item" data-bs-toggle="list" href="#horizontal-messages">Keuangan</a>
+                          <a class="list-group-item list-group-item-action" id="settings-list-item" data-bs-toggle="list" href="#horizontal-settings">Jurnal</a>
+                        </div>
+                        <div class="tab-content px-0 mt-0">
+                          <div class="tab-pane fade active show" id="horizontal-home">
+                            <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Sejak Tanggal</strong>    07 Augustus 2023
+                        <p><strong>Penanggung Jawab </strong>    Ini penanggung jawab pertama</p>
+                        <p><strong>Lokasi </strong>   Ini lokasi pertama</p>
+                        <p><strong>Jumlah</strong>    23 Unit</p>
+                        <p><strong>Kondisi</strong>   97%</p>
+                        <p><strong>Kelengkapan</strong>  100%</p>
+                        <p><strong>Keterangan</strong>    Ini keterangan riwayat aset pertama</p>
+                  
+
+                      </p>
+
+                  
+                    </div>
+
+                  </div>
+                   <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Sejak Tanggal</strong>  03 Agustus 2023
+                        <p><strong>Penanggung Jawab </strong>    Ini penanggung jawab pertama</p>
+                        <p><strong>Lokasi </strong>   Ini lokasi pertama</p>
+                        <p><strong>Jumlah</strong>    1 Unit</p>
+                        <p><strong>Kondisi</strong>   97%</p>
+                        <p><strong>Kelengkapan</strong>  100%</p>
+                        <p><strong>Keterangan</strong>    Ini keterangan riwayat aset pertama</p>
+
+                      </p>
+                    </div>
+                    
+
+                    
+                  </div>
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Form Tambah Riwayat</h5>
+                      
+                    </div>
+                    <div class="card-body">
+                      <form action="#">
+                        <div class="mb-3 row">
+                        <label for="html5-date-input" class="col-md-2 col-form-label">Sejak Tanggal</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="date" value="2021-06-18" id="html5-date-input">
+                        </div>
+                      </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">Penanggung Jawab</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="basic-default-company" placeholder="Masukkan Penanggung Jawab">
+                          </div>
+                          </div>
+                          <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">Lokasi</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="basic-default-company" placeholder="Masukan lokasi">
+                          </div>
+                          </div>
+                          <div class="mb-3 row">
+                        <label for="html5-number-input" class="col-md-2 col-form-label">Jumlah (Unit)</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="number" value="18" id="html5-number-input">
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="html5-number-input" class="col-md-2 col-form-label">Kondisi (%)</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="number" value="18" id="html5-number-input">
+                        </div>
+                      </div><div><div class="mb-3 row">
+                        <label for="html5-number-input" class="col-md-2 col-form-label">Kelengkapan (%)</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="number" value="18" id="html5-number-input">
+                        </div>
+                      </div>
+
+                    </div>
+                      <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+
+                        
+                        <div class="row justify-content-end">
+                          <div class="col-sm-20 pdt1">
+                            <button type="submit" class="btn btn-primary">Simpan </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                          </div>
+                          <div class="tab-pane fade" id="horizontal-profile">
+                             <div class="card mb-4">
+                    <div class="card-body">
+                      <p>Mingguan</p> <strong>Setiap hari Rabu</strong> </p> <p>Ini Agenda aset pertama</p>
+                     
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Form Tambah Agenda</h5>
+                      
+                    </div>
+                    <div class="card-body">
+                      <form action="#">
+                        
+                      <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Tipe</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected="">Berkala: Mingguan</option>
+                          <option value="1">Berkala: Bulanan </option>
+                          <option value="2">Berkala: Tahunan</option>
+                          <option value="3">Tanggal Tertentu</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Setiap Hari</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected="">Senin</option>
+                          <option value="1">Selasa</option>
+                          <option value="2">Rabu</option>
+                          <option value="3">Kamis</option>
+                          <option value="4">Jum'at</option>
+                          <option value="5">Sabtu</option>
+                          <option value="6">Minggu</option>
+                        </select>
+                      </div>
+                          
+                          
+                     
+                      <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+
+                        
+                        <div class="row justify-content-end">
+                          <div class="col-sm-20 pdt1">
+                            <button type="submit" class="btn btn-primary">Simpan </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                          </div>
+                          <!-- batas agenda -->
+                          <div class="tab-pane fade" id="horizontal-messages">
+                             <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>07 Augustus 2023</strong> <p> Rp 50.000,00  Ini keterangan aset pertama (pengeluaran)</p>  
+                        <p><strong>08 Agustus 2023</strong>  </p>  Rp 100.000,00  Ini keterangan keuangan aset pertama</p>
+                        <p>_____________________________________</p>
+                        <p>Total Pengeluaran <strong>Rp 50.000,00</strong><p>Total Pemasukan <strong>Rp 100.000,00</strong></p>
+                        <p>Selisih <strong>Rp 50.000,00</strong></p>
+
+
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Form Tambah Keuangan</h5>
+                      
+                    </div>
+                    <div class="card-body">
+                      <form action="#">
+                         <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Pengeluaran</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected="">Pengeluaran</option>
+                          <option value="1">Pemasukan </option>
+                         
+                        
+                        </select>
+                      </div>
+                        <div class="mb-3 row">
+                        <label for="html5-date-input" class="col-md-2 col-form-label">Sejak Tanggal</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="date" value="2021-06-18" id="html5-date-input">
+                        </div>
+                      </div>
+                        <div class="input-group input-group-merge">
+                        <span class="input-group-text">Rp</span>
+                        <input type="text" class="form-control" placeholder="Nominal" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">0.00</span>
+                      </div>
+                         
+                  
+                      <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+
+                        
+                        <div class="row justify-content-end">
+                          <div class="col-sm-20 pdt1">
+                            <button type="submit" class="btn btn-primary">Simpan </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                          </div>
+                          <div class="tab-pane fade" id="horizontal-settings">
+                            <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>04 Aug 2023</strong> <p>Ini kejadian Jurnal aset pertama</p>
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Form Tambah Jurnal</h5>
+                      
+                    </div>
+                    <div class="card-body">
+                      <form action="#">
+                        <div class="mb-3 row">
+                        <label for="html5-date-input" class="col-md-2 col-form-label"> Tanggal</label>
+                        <div class="col-md-10">
+                          <input class="form-control" type="date" value="2021-06-18" id="html5-date-input">
+                        </div>
+                      </div>
+                       
+                         
+                         
+                      <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Kejadian</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+
+                        
+                        <div class="row justify-content-end">
+                          <div class="col-sm-20 pdt1">
+                            <button type="submit" class="btn btn-primary">Simpan </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                   
+                  </div>
                 </div>
+              </div>
 
-            <!-- ROW -->
-             </div>
+             
 
-              <!-- Tabel nama aset -->
-              
+        
             </div>
             <!-- / Content -->
 

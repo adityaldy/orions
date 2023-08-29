@@ -109,3 +109,102 @@
 .card-body.pdl0 {
   padding-left: 0;
 }
+
+.mb-1.pdl1 {
+  padding-left: 0.8rem;
+}
+
+.col-sm-20.pdt1 {
+  padding-top: 1rem;
+}
+
+.card-body.pdl0.pdt1r {
+  padding-top: 0rem;
+  }
+  .mb-2.pdl1r {
+    padding-left: 1.5rem;
+    }
+
+    .card-body.pdt1rm {
+      padding-top: 0rem;
+
+     }
+
+     .col-12.pdt1rem {
+      padding-top: 1rem;
+
+     }
+     .col-12.pdtrem1 {
+      padding-top: 1rem;
+     }
+     .col-12.pdl0r {
+      padding-left: 0rem;
+     }
+     .col-12.pdl0r.pdtrem2{
+      padding-top: 1rem;
+     }
+
+     .row.m1rem{
+      margin: 1rem;
+     }
+
+     .card.mb-4.pd2rm {
+      padding: 2rem;
+     }
+
+     .col-12.pdl0rem {
+      padding-left: 0rem;
+     }
+
+     .col-sm-20.pdl0rem2 {
+      padding-left: 0rem;
+     }
+
+     .col-12.pdl0rem3 {
+      padding-left: 0rem;
+     }
+
+     .card.mb-4.pd2rem2 {
+      padding: 2rem;
+     }
+
+     .card-body.pdlt1 {
+      padding-top: 0rem;
+      padding-left: 0.6rem;
+     }
+
+     .col-12.pdl0rem4 {
+      padding-left: 0rem;
+     }
+
+     .card-body.pdl0.pdt0rem3 {
+      padding-top: 0rem;
+     }
+
+     .card-body.pdl0.pdt0rem5 {
+      padding-top: 0rem;
+     }
+
+     .card-body.pdl0.pdt0rem6 {
+      padding-top: 0rem;
+     }
+     .card-body.pdl0.pdt0rem7 {
+      padding-top: 0rem;
+     }
+
+     .card.mb-4.pd2rem {
+      padding: 2rem;
+     }
+
+     .jdlcent {
+      padding-left: 11rem;
+      
+      }
+
+      .col-4.pdl8rem {
+        padding-left: 8.8rem;
+        }
+
+        .card.mb-4.pd1rm {
+        padding: 1.4rem;
+         }

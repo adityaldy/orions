@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Show Kategori</title>
+    <title>Cetak Kode QR</title>
 
     <meta name="description" content="" />
 
@@ -301,7 +301,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">Budi Sudarsono</span>
+                            <span class="fw-semibold d-block">John Pantau</span>
                             <small class="text-muted">Admin Magang</small>
                           </div>
                         </div>
@@ -316,7 +316,7 @@
                         <span class="align-middle">Profilku</span>
                       </a>
                     </li>
-                    
+                   
                     
                     <li>
                       <div class="dropdown-divider"></div>
@@ -330,80 +330,126 @@
                   </ul>
                 </li>
                 <!--/ User -->
-
               </ul>
             </div>
           </nav>
 
- <div class="content-wrapper">
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Halaman/</span> Show Data Kategori</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Halaman/</span> Cetak Kode QR</h4>
 
-            <!-- show set isi -->
-            <div class="row">
-                <!-- Inline text elements -->
-                <div class="col">
+              <!-- Basic Layout & Basic with Icons -->
+              <div class="row">
+                <!-- Basic Layout -->
+                <div class="col-xxl">
                   <div class="card mb-4">
-                    <h5 class="card-header">Nama Kategori</h5>
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Cari Aset</h5>
+                      
+                    </div>
+                    <form action="">
                     <div class="card-body">
-                      <table class="table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Nama </small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Premium</p>
-                            </td>
-                          </tr>
-                          
-                          <tbody>
-                          <tr>
-                            <td class="align-middle"><small class="text-light fw-semibold">Keterangan</small></td>
-                            <td class="py-3">
-                              <p class="mb-0"> Di Peruntukkan untuk kalangan yang mempunyai daya beli rendah. </p>
-                            </td>
-                          </tr>
-                          
+                      <label for="exampleFormControlSelect1" class="form-label">Kategori</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected>Pilih Kategori</option>
+                          <option value="1">Biasa</option>
+                          <option value="2">Premium</option>
+                          <option value="3">Biasa</option>
+                        </select>
+                         <div class="mb-3">
+                        <label for="defaultInput" class="form-label">Nama Aset</label>
+                        <input id="defaultInput" class="form-control" type="text" placeholder="Masukkan Nama Aset" />
+                      </div>
+                        
+                       
+                        
+                        <div class="pdl0">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Cari</button>
+                          </div>
+                          </form>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="flex-row">
+                       
+                        <div class="row justify-content-between">
+                        <div class="col-4">
+                        <a href="show-aset.html"><img src="../assets/img/barcode.jpeg" alt="gambar-meja3 alt=" image="" height="50" width="50"> Ini Aset Pertama</a>
+                        </div>
+                        <div class="col-4 pdl8rem">
+                        <a href="#" class="btn btn-primary"><box-icon name="plus-medical"></box-icon>
+                        <i class="bx bx-plus-medical"></i></a>
+                        </div>
+                        </div>
 
+                     </div>
+                     <br>
+                       
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                        <a href="#"><img src="../assets/img/barcode.jpeg" alt="gambar-meja3 alt=" image="" height="50" width="50"> Ini Aset Kedua</a>
+                        </div>
+                        <div class="col-4 pdl8rem">
+                        <a href="#" class="btn btn-primary"><box-icon name="plus-medical"></box-icon>
+                        <i class="bx bx-plus-medical"></i></a>
+                        </div>
+                        </div>
 
+                      
+                      
 
-                           
+                    </div>
 
-                          
-                          
-                         
-                         
-                        </tbody>
-                      </table>
+                  </div>
+
+                </div>
+                <!-- Basic with Icons -->
+                <div class="col-xxl">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Daftar Cetak Kode QR</h5>
+                      </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname"></label>
+                          <div class="col-sm-10">
+                            
+                          </div>
+                        </div>
+                        
+                       
+                      
+                       
+                        <div class="pdl0">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Cetak PDF</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-
-
-          
-          <!-- Content na page -->
-
-
-          
-                </div>
-                </div>
-
-
-
+              </div>
             </div>
 
+            </div>
             <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                 <div class="mb-2 mb-md-0">
-                Sistem Manajemen Aset ©
+                 Sistem Manajemen Aset ©
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>
-                                   
+                  </script>        
                 </div>
                 <div>
                   
