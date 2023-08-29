@@ -9934,6 +9934,16 @@ button.list-group-item-gray.active {
   text-decoration: none !important;
 }
 
+.text-orions {
+  display: block; /* Make the text elements block-level */
+}
+
+.text-orions span {
+  display: block; /* Each span should be on a new line */
+  margin-top: 5px; /* Add some margin between the two text lines */
+}
+
+
 .text-decoration-underline {
   text-decoration: underline !important;
 }
